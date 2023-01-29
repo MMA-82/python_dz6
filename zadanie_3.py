@@ -8,5 +8,4 @@
 # print('Сумма цифр числа равна:', sum(list))
 
 number = input('Введите любое число: ')
-list_numb = list(map(int, [i for i in number if i.isdigit()]))
-print(f'Сумма цифр введенного числа = {sum(list_numb)}')
+print(f'Сумма цифр введенного числа = {sum(list(map(int, [i for i in number if i.isdigit()])))}')
